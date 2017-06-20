@@ -1,0 +1,38 @@
+html {
+	height: 100%;
+}
+
+body {
+    /*font: normal 30px "Helvetica Neue",Helvetica,sans-serif !important;*/
+    /*height: 100%;*/
+    background: #132B36 !important;
+    /* For browsers that do not support gradients */
+/*    background: -webkit-linear-gradient(#f8f8f9, #fff) fixed;
+    background: -o-linear-gradient(#f8f8f9, #fff) fixed;
+    background: -moz-linear-gradient(#f8f8f9, #fff) fixed;
+    background: linear-gradient(#f8f8f9, #fff) fixed; */
+}
+
+h1 {
+    font: normal 50px "Helvetica Neue",Helvetica,sans-serif !important;
+	color: #ecf0f1 !important;
+	text-align: center;
+}
+
+.progress-bar {
+
+}
+
+.pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {
+    background-color: #305251 !important;
+    color: #ecf0f1 !important;
+    text-align: center !important;
+}
+
+.button-xlarge {
+	font-size: 200% !important;
+}
+
+.text-center {
+	text-align: center;
+}
