@@ -3,16 +3,8 @@ html {
 }
 
 body {
-    /*font: normal 30px "Helvetica Neue",Helvetica,sans-serif !important;*/
-    /*height: 100%;*/
     background: #132B36 !important;
     color: #ecf0f1 !important;
-
-    /* For browsers that do not support gradients */
-/*    background: -webkit-linear-gradient(#f8f8f9, #fff) fixed;
-    background: -o-linear-gradient(#f8f8f9, #fff) fixed;
-    background: -moz-linear-gradient(#f8f8f9, #fff) fixed;
-    background: linear-gradient(#f8f8f9, #fff) fixed; */
 }
 
 h1 {
