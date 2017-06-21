@@ -6,6 +6,8 @@ body {
     /*font: normal 30px "Helvetica Neue",Helvetica,sans-serif !important;*/
     /*height: 100%;*/
     background: #132B36 !important;
+    color: #ecf0f1 !important;
+
     /* For browsers that do not support gradients */
 /*    background: -webkit-linear-gradient(#f8f8f9, #fff) fixed;
     background: -o-linear-gradient(#f8f8f9, #fff) fixed;
@@ -15,24 +17,33 @@ body {
 
 h1 {
     font: normal 50px "Helvetica Neue",Helvetica,sans-serif !important;
-	color: #ecf0f1 !important;
 	text-align: center;
 }
 
-.progress-bar {
-
+.progress-barr {
+    width: 0px;
+    height: 50px;
+    margin: 0 auto;
+    background: #78A3A7;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {
     background-color: #305251 !important;
-    color: #ecf0f1 !important;
     text-align: center !important;
 }
 
-.button-xlarge {
-	font-size: 200% !important;
+.text-center {
+    text-align: center;
 }
 
-.text-center {
-	text-align: center;
+.pure-button.pure-button-primary.button-xlarge {
+	font-size: 200%;
+}
+
+.pure-button.pure-button-primary.download-file {
+    display: none;
 }
