@@ -5,6 +5,7 @@
 
 	<!-- Website styles -->
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/main.css">
 
 	<!-- Pure -->
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
@@ -12,11 +13,25 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+	<!-- JQuery -->
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">	
+  </script>
+
 	<title>TEAM SECE</title>
 </head>
+
 <body>
 	<div class="content">
-		<h1>Please enter audio file to be attentuated.</h1>
+		<h1>Please enter audio file to be attenuated.</h1>
+		<p>The audio file must be:</p>
+		<ul>
+			<li>MP3 audio format</li>
+			<li>File must be smaller than 50MB</li>
+
+		</ul>
 
 		<div class="text-center">
 			<button class="pure-button pure-button-primary button-xlarge upload-file" onclick="document.getElementById('file-input').click();">Upload</button>

@@ -12,17 +12,6 @@ h1 {
 	text-align: center;
 }
 
-.progress-barr {
-    width: 0px;
-    height: 50px;
-    margin: 0 auto;
-    background: #78A3A7;
-    -webkit-transition: width 2s; /* Safari */
-    transition: width 2s;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {
     background-color: #305251 !important;
     text-align: center !important;
