@@ -24,41 +24,65 @@
 </head>
 
 <body>
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Team SECE</a>
+	    </div>
+	    <ul class="nav navbar-nav navbar-right">
+      	<li><a href="#"><span class="glyphicon glyphicon-user"></span> Logged in as: admin</a></li>
+    	</ul>
+	  </div>
+	</nav>
+
 	<div class="content">
-		<h1>Please enter audio file to be attenuated.</h1>
-		<p>The audio file must be:</p>
-		<ul>
-			<li>MP3 audio format</li>
-			<li>File must be smaller than 50MB</li>
+		<div class="attenuate">
+			<h2>Please enter audio file to be attenuated.</h2>
+			<p>The audio file must be:</p>
+			<ul>
+				<li>MP3, WAV, or AIFF audio format</li>
+				<li>File must be smaller than 50MB</li>
+			</ul>
 
-		</ul>
+			<div>
+				<button class="pure-button pure-button-primary button-xlarge upload-file" onclick="document.getElementById('file-input').click();">Upload</button>
+				<input id="file-input" type="file" name="name" style="display: none;"/>
+				<p id="attenuate-err"></p>
+			</div>
 
-		<div class="text-center">
-			<button class="pure-button pure-button-primary button-xlarge upload-file" onclick="document.getElementById('file-input').click();">Upload</button>
-			<input id="file-input" type="file" name="name" style="display: none;"/>
+			<div class="progress-barr"></div>
+
+			<div>
+	      <form method="get" action="http://ernest-wong.me/midterm-demo-filtered.mp3?">
+					<button class="pure-button pure-button-primary button-xlarge download-file">Convert</button>
+	      </form>
+			</div>
 		</div>
 
-		<div class="progress-barr"></div>
+		<div class="train">
+			<h2>Upload a clip for training</h2>
+			<p>The audio file must be:</p>
+			<ul>
+				<li>MP3, WAV, or AIFF audio format</li>
+				<li>File must be smaller than 50MB</li>
+				<li>File must be at least 10 seconds long</li>
+			</ul>
 
-		<div class="text-center">
-            <form method="get" action="http://ernest-wong.me/midterm-demo-filtered.mp3?">
-			<button class="pure-button pure-button-primary button-xlarge download-file">Convert</button>
-            </form>
+			<div>
+				<button class="pure-button pure-button-primary button-xlarge upload-file" onclick="document.getElementById('file-input').click();">Upload</button>
+				<input id="file-input" type="file" name="name" style="display: none;"/>
+				<p id="train-err"></p>
+			</div>
+
+			<div class="filelist">
+
+			</div>
 		</div>
 	</div>
 
-	<audio controls>
-	  <source src="horse.ogg" type="audio/ogg">
-	  <source src="horse.mp3" type="audio/mpeg">
-		Your browser does not support the audio element.
-	</audio>
 
 	<!-- Website Javascript -->
 	<script src="js/SECE.js"></script>
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-	  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-	  crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -14,7 +14,6 @@ h1 {
 
 .pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {
     background-color: #305251 !important;
-    text-align: center !important;
 }
 
 .text-center {
@@ -22,7 +21,7 @@ h1 {
 }
 
 .pure-button.pure-button-primary.button-xlarge {
-	font-size: 200%;
+	font-size: 130%;
 }
 
 .pure-button.pure-button-primary.download-file {
