@@ -1,10 +1,16 @@
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
 .progress-barr {
     width: 0px;
     height: 50px;
     margin: 0 auto;
     background: #78A3A7;
-    -webkit-transition: width 2s; /* Safari */
-    transition: width 2s;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -39,4 +45,8 @@
 #attenuate-err, #train-err{
     color:#FF0000;
     margin-top:5px;
+}
+
+.pure-button.pure-button-primary#download-file {
+    display: none;
 }

@@ -45,17 +45,28 @@
 			</ul>
 
 			<div>
-				<button class="pure-button pure-button-primary button-xlarge upload-file" onclick="document.getElementById('file-input').click();">Upload</button>
-				<input id="file-input" type="file" name="name" style="display: none;"/>
+				<button id="atn-upload-btn" class="pure-button pure-button-primary button-xlarge">Upload</button>
+				<input id="atn-file-input" type="file" name="name" style="display: none;"/>
 				<p id="attenuate-err"></p>
 			</div>
 
-			<div class="progress-barr"></div>
+			<div id="attenuate-bar" class="progress-barr"></div>
 
 			<div>
 	      <form method="get" action="http://ernest-wong.me/midterm-demo-filtered.mp3?">
-					<button class="pure-button pure-button-primary button-xlarge download-file">Convert</button>
+					<button id="download-file" class="pure-button pure-button-primary button-xlarge">Convert</button>
 	      </form>
+			</div>
+
+			<div id="clips" style="display:none">
+				<h5>Original:</h5>
+				<audio id="original" controls controlsList="nodownload">
+				  Your browser does not support the <code>audio</code> element.
+				</audio>
+				<h5>Processed:</h5>
+				<audio id="processed" controls controlsList="nodownload">
+				  Your browser does not support the <code>audio</code> element.
+				</audio>
 			</div>
 		</div>
 
@@ -69,13 +80,18 @@
 			</ul>
 
 			<div>
-				<button class="pure-button pure-button-primary button-xlarge upload-file" onclick="document.getElementById('file-input').click();">Upload</button>
-				<input id="file-input" type="file" name="name" style="display: none;"/>
+				<button id="train-upload-btn" class="pure-button pure-button-primary button-xlarge">Upload</button>
+				<input id="train-file-input" type="file" name="name" style="display: none;"/>
 				<p id="train-err"></p>
 			</div>
 
-			<div class="filelist">
+			<div id="train-bar" class="progress-barr"></div>
 
+			<div class="filelist">
+				<h3>Training List:</h3>
+				<ul id="train-list">
+
+				</ul>
 			</div>
 		</div>
 	</div>
