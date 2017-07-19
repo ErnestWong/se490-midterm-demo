@@ -1,6 +1,12 @@
 (function () {
 	$("#atn-upload-btn").click(function(){
-        $('#atn-file-input').click();
+        if ($("#train-list > li").length == 0){
+            $("#attenuate-err").html("Please upload training data");
+        }
+        else {
+            $("#attenuate-err").html("");
+            $('#atn-file-input').click();
+        }
     });
 
     $("#train-upload-btn").click(function(){
